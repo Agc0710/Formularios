@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".loginNetflix">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="203dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/netflixlog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="186dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/txtusernameNetflix"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/cornernetflix"
+        android:ems="10"
+        android:hint="Email or phone number"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/txtPasswordNetflix"
+        android:layout_width="337dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/cornernetflix"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtusernameNetflix" />
+
+    <Button
+        android:id="@+id/btnloginNetflix"
+        android:layout_width="341dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/red"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordNetflix" />
+
+    <CheckBox
+        android:id="@+id/CheckboxNetflix"
+        android:layout_width="106dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/gray"
+        android:text="CheckBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginNetflix" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:text="Need help?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginNetflix" />
+
+    <ImageView
+        android:id="@+id/facelogin"
+        android:layout_width="38dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.093"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CheckboxNetflix"
+        app:srcCompat="@drawable/facelog" />
+
+    <TextView
+        android:id="@+id/withfacebook"
+        android:layout_width="196dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="92dp"
+        android:text="Login with Facebook"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginNetflix" />
+
+    <TextView
+        android:id="@+id/options"
+        android:layout_width="196dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="140dp"
+        android:text="New to Netflix? "
+        android:textAlignment="center"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginNetflix" />
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="196dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="sans-serif"
+        android:text="Sign up now"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnloginNetflix" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
